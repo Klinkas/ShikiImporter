@@ -8,30 +8,35 @@ public class ShikimoriAnime
     /// <summary>
     /// Навзание аниме
     /// </summary>
-    public string TargetTitle { get; set; }
-    
+    public string target_title { get; set; }
+
     /// <summary>
     /// ID аниме
     /// </summary>
-    public int TargetId { get; set; }
+    public int? target_id { get; set; } = null;
 
     /// <summary>
     /// Тип импорта (по умолчанию аниме)
     /// </summary>
-    public string TargetType => "Anime";
+    public string target_type => "Anime";
 
     /// <summary>
     /// Оценка (по умолчанию 0)
     /// </summary>
-    public int Score { get; set; } = 0;
+    public int score { get; set; } = 0;
 
+    /// <summary>
+    /// Статус просмотра
+    /// </summary>
+    public string status { get; set; }
+    
     /// <summary>
     /// Пересмотрено (по умолчанию 0)
     /// </summary>
-    public int ReWatches { get; set; } = 0;
+    public int? rewatches { get; set; } = null;
     
     /// <summary>
     /// Эпизоды (по умолчанию 0)
     /// </summary>
-    public int Episodes { get; set; } = 0;
+    public int? episodes { get; set; } = null;
 }

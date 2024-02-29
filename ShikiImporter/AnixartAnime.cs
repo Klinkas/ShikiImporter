@@ -20,7 +20,6 @@ public class AnixartAnime
     /// </summary>
     public string OriginalTitle { get; set; }
     
-    
     /// <summary>
     /// В избранном
     /// </summary>
@@ -29,7 +28,7 @@ public class AnixartAnime
     /// <summary>
     /// Статус просмотра
     /// </summary>
-    public string Status { get; set; }
+    public AnixartStatusEnum Status { get; set; }
     
     /// <summary>
     /// Оценка
